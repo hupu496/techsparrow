@@ -111,6 +111,9 @@ h6,
 .sticky-top.navbar-light .navbar-brand img {
     max-height: 45px;
 }
+#submit:hover{
+    background-color:#33333;
+}
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {

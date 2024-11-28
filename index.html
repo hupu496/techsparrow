@@ -183,7 +183,7 @@
                               <img src="img/html.png" width="50%">
                             </div>
                             <h5 class="mb-3">Web Design</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p>Web design content design focuses on creating and structuring the textual and visual content of a website to ensure it is engaging, accessible, and functional.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
                     </div>
@@ -193,7 +193,7 @@
                               <img src="img/programming.png" width="50%">
                             </div>
                             <h5 class="mb-3">Web Application</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p>Web application content is designed to engage users, guide them through functionalities, and enhance their experience with the application.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
                     </div>
@@ -203,7 +203,7 @@
                               <img src="img/web-design.png" width="50%">
                             </div>
                             <h5 class="mb-3">Banner & Poster Design</h5>
-                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <p>Banner and poster design are vital for grabbing attention, communicating key messages quickly, and visually representing a brand or event.</p>
                             <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                         </div>
                     </div>
@@ -225,7 +225,7 @@
                         <ul class="list-inline mb-5" id="portfolio-flters">
                             <li class="btn px-3 pe-4 active" data-filter="*">All</li>
                             <li class="btn px-3 pe-4" data-filter=".first">Design</li>
-                            <li class="btn px-3 pe-4" data-filter=".second">Development</li>
+                            <li class="btn px-3 pe-4" data-filter=".second">Application</li>
                         </ul>
                     </div>
                 </div>
@@ -433,9 +433,8 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+917352986122</p>
+                        <p><i class="fa fa-envelope me-3"></i>techsparrow09@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -446,10 +445,10 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <h5 class="text-white mb-4">Popular Link</h5>
-                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="/about.html">About Us</a>
                         <!-- <a class="btn btn-link" href="">Contact Us</a> -->
                         <!-- <a class="btn btn-link" href="">Privacy Policy</a> -->
-                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <a class="btn btn-link" href="/termconditon.html">Terms & Condition</a>
                         <!-- <a class="btn btn-link" href="">Career</a> -->
                     </div>
                     <div class="col-md-6 col-lg-3">
@@ -492,7 +491,7 @@
                             &copy; <a class="border-bottom" href="#">Tech Sparrow</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+							Designed By Tech Sparrow<a class="border-bottom" href="/"></a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
@@ -515,18 +514,18 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form>
+      <form method="post" action="" name="contactform">
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" name="Name" id="recipient-name">
           </div>
            <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Email:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" name="Email" id="recipient-name">
           </div>
            <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Mobile No:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <input type="text" class="form-control" name="Mobile" id="recipient-name">
           </div>
            <div class="mb-3">
              <label for="recipient-name" class="col-form-label">Services:</label>
@@ -543,7 +542,7 @@
           </div>
           <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" value="submit" id="submit" class="btn btn-primary">Save changes</button>
       </div>
         </form>
       </div>
@@ -558,6 +557,7 @@
     </div>
 
     <!-- JavaScript Libraries -->
+    <script type="text/javascript" src="Google Sheet.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
