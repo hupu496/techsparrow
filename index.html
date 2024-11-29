@@ -514,18 +514,18 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form method="post" action="" name="contactform">
+      <form method="post" action="https://script.google.com/macros/s/AKfycbwMcyCnKYCz7f2DhUpsMsnR6UrPGYw374GDHfBQVcCm724l8oTBZZfdTJzPVQltVVPlJg/exec">
           <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Name:</label>
-            <input type="text" class="form-control" name="Name" id="recipient-name">
+            <input type="text" class="form-control" name="Name" >
           </div>
            <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Email:</label>
-            <input type="text" class="form-control" name="Email" id="recipient-name">
+            <input type="text" class="form-control" name="Email" >
           </div>
            <div class="mb-3">
             <label for="recipient-name" class="col-form-label">Mobile No:</label>
-            <input type="text" class="form-control" name="Mobile" id="recipient-name">
+            <input type="text" class="form-control" name="Mobile" >
           </div>
            <div class="mb-3">
              <label for="recipient-name" class="col-form-label">Services:</label>
@@ -538,11 +538,11 @@
           </div>
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" name="message" id="message-text"></textarea>
+            <textarea class="form-control" name="message"></textarea>
           </div>
           <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" value="submit" id="submit" class="btn btn-primary">Save changes</button>
+        <button type="submit" value="Submit" id="submit" class="btn btn-primary">Save changes</button>
       </div>
         </form>
       </div>
@@ -569,6 +569,31 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        function doPost(e) {
+  try {
+    // Parse form data
+    var data = e.parameter;
+    
+    // Open Google Sheet by name or ID
+    var sheet = SpreadsheetApp.openById("AKfycbwMcyCnKYCz7f2DhUpsMsnR6UrPGYw374GDHfBQVcCm724l8oTBZZfdTJzPVQltVVPlJg").getActiveSheet();
+
+    // Append data to the sheet
+    sheet.appendRow([data.Name, data.Email, data.Mobile, data.services, data.message]);
+
+    // Return success response
+    return ContentService.createTextOutput(JSON.stringify({ result: "success" }))
+      .setMimeType(ContentService.MimeType.JSON);
+  } catch (error) {
+    // Return error response
+    return ContentService.createTextOutput(JSON.stringify({
+      result: "error",
+      error: error.message
+    })).setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
+    </script>
 </body>
 
 </html>
