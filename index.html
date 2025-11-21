@@ -92,7 +92,6 @@
         </div>
         <!-- Navbar & Hero End -->
 
-
         <!-- Full Screen Search Start -->
         <div class="modal fade" id="searchModal" tabindex="-1">
             <div class="modal-dialog modal-fullscreen">
@@ -253,9 +252,14 @@
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/pathalb.jpeg" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/pathalb.jpeg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                  <!-- Plus Icon (opens modal) -->
+                                 <a class="btn btn-light open-video-modal" data-bs-toggle="modal"
+                                  data-bs-target="#videoModal"
+                                  data-video="https://www.youtube.com/embed/7xoVg9giTI4?autoplay=1">
+                                  <i class="fa fa-plus fa-2x text-primary"></i>
+                                   </a>
                                  <p class="text-white">Pathlab Application</p>
-                                <ol class="text-white">
+                                 <ol class="text-white">
                                     <li>Admin Panel</li>
                                     <li>Receiptiest Panel</li>
                                     <li>Invoice Bill</li>
@@ -269,6 +273,17 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0">
+        <iframe id="modalVideo" width="100%" height="450" src="" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
                     <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/static.png" alt="">
@@ -293,7 +308,13 @@
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/petrol_pump.png" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-light" href="img/petrol_pump.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
+                                
+                                <!-- Plus Icon (opens modal) -->
+                               <a class="btn btn-light open-video-modal" data-bs-toggle="modal"
+                                 data-bs-target="#videoModal"
+                                data-video="https://www.youtube.com/embed/fKNY2S_ULT4?autoplay=1">
+                               <i class="fa fa-plus fa-2x text-primary"></i>
+                                </a>
                                  <p class="text-white">Pump Application</p>
                                 <ol class="text-white">
                                     <li>Admin Panel</li>
@@ -308,6 +329,17 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Video Modal -->
+                    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+                   <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-dark">
+                    <div class="modal-body p-0">
+                      <iframe id="modalVideo" width="100%" height="450" src="" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
                     <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
                         <div class="position-relative rounded overflow-hidden">
                             <img class="img-fluid w-100" src="img/design.jpg" alt="">
@@ -327,27 +359,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
-                        <div class="position-relative rounded overflow-hidden">
-                            <img class="img-fluid w-100" src="img/Services.png" alt="">
-                            <div class="portfolio-overlay">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LswVOGy4nFA?si=jMvc3pd_mEdHakcm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <a class="btn btn-light" href="img/Services.png" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-primary"></i></a>
-                                <p class="text-white">Service Application</p>
-                                <ol class="text-white">
-                                    <li>Admin Panel</li>
-                                    <li>Franchise Panel</li>
-                                    <li>Service Order</li>
-                                    <li>User Panel</li>
-                                    <li>Order Status</li>
-                                </ol>
-                                <div class="mt-auto">
-                                    <small class="text-white"><i class="fa fa-folder me-2"></i>Service Application</small>
-                                   <a type="button" class="text-white Service" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-service="Service Application"><i class="fa fa-shopping-cart me-2"></i>Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
+  <div class="position-relative rounded overflow-hidden">
+    <img class="img-fluid w-100" src="img/Services.png" alt="">
+    <div class="portfolio-overlay">
+      <!-- Plus Icon (opens modal) -->
+      <a class="btn btn-light open-video-modal" data-bs-toggle="modal"
+         data-bs-target="#videoModal"
+         data-video="https://www.youtube.com/embed/LswVOGy4nFA?autoplay=1">
+        <i class="fa fa-plus fa-2x text-primary"></i>
+      </a>
+
+      <p class="text-white">Service Application</p>
+      <ol class="text-white">
+        <li>Admin Panel</li>
+        <li>Franchise Panel</li>
+        <li>Service Order</li>
+        <li>User Panel</li>
+        <li>Order Status</li>
+      </ol>
+
+      <div class="mt-auto">
+        <small class="text-white"><i class="fa fa-folder me-2"></i>Service Application</small>
+        <a type="button" class="text-white Service" data-bs-toggle="modal"
+          data-bs-target="#exampleModal1" data-service="Service Application"><i class="fa fa-shopping-cart me-2"></i>Order Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-body p-0">
+        <iframe id="modalVideo" width="100%" height="450" src="" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
                 </div>
             </div>
         </div>
@@ -603,6 +654,19 @@
        
       });
    });
+   const videoModal = document.getElementById('videoModal');
+  const modalVideo = document.getElementById('modalVideo');
+
+  document.querySelectorAll('.open-video-modal').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const videoUrl = this.getAttribute('data-video');
+      modalVideo.src = videoUrl; // Load video
+    });
+  });
+
+  videoModal.addEventListener('hidden.bs.modal', () => {
+    modalVideo.src = ''; // Stop video when modal closes
+  });
  </script>
     
 </body>
